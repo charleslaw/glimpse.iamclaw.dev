@@ -2,7 +2,7 @@
 
 The product website for [Glimpse](https://github.com/charleslaw/glimpse), a fast, lightweight image viewer for macOS. Static HTML and CSS with a small optional release lookup. No build tools or package installation.
 
-Local folder: `~/src/glimpse.iamclaw.dev`. Planned repository: `charleslaw/glimpse.iamclaw.dev`. Custom domain: `glimpse.iamclaw.dev`.
+Local folder: `~/src/glimpse.iamclaw.dev`. Repository: [charleslaw/glimpse.iamclaw.dev](https://github.com/charleslaw/glimpse.iamclaw.dev). Custom domain: `glimpse.iamclaw.dev`.
 
 ## Preview
 
@@ -33,13 +33,13 @@ The website assumes that public release artifacts are reviewed and published by 
 
 ## Hosting
 
-Use a public repository named **glimpse.iamclaw.dev**. Enable GitHub Pages from **main → / (root)** and set the custom domain to **glimpse.iamclaw.dev**.
+The public repository is **glimpse.iamclaw.dev**. GitHub Pages is configured for **main → / (root)** with custom domain **glimpse.iamclaw.dev**. See [deployment notes](docs/deployment.md).
 
 In Namecheap, add one **CNAME Record** with Host **glimpse**, Value **charleslaw.github.io**, TTL **Automatic**. The main `iamclaw.dev` website, `www`, and email DNS records remain separate. Enable Enforce HTTPS in this repository’s Pages settings after DNS validates and the certificate is issued.
 
 ## Asset credits
 
 - Glimpse icon: copied from the user’s existing app assets; unchanged.
-- App screenshot: captured directly from the installed Glimpse app. The screenshot has been resized and compressed for the website.
+- App screenshot: captured directly from the installed Glimpse app. The screenshot has been resized and compressed for the website. The preview restores the native window dots in CSS to cover macOS’s temporary screen-capture indicator.
 - Sample photo: [Antelope Canyon by Justin Roy](https://commons.wikimedia.org/wiki/File:Antelope_Canyon_(Unsplash).jpg), published under **CC0 1.0**. The photo appears inside the screenshot. A visible photo credit is included in the footer.
 - Product features and requirements: verified against the app’s local README, source code, and distribution documentation. No benchmark numbers, ratings, testimonials, or unreleased binary availability are invented.
