@@ -15,7 +15,7 @@ Open http://127.0.0.1:4174/.
 
 ## Source
 
-- `index.html`: all product copy, navigation, keyboard shortcuts, FAQ, and availability information.
+- `index.html`: plain-language product copy, three everyday benefits, practical FAQ, and availability information.
 - `assets/style.css`: responsive dark layout, using warm colors from the existing app icon and system fonts.
 - `assets/releases.js`: optional public GitHub release lookup.
 - `assets/glimpse-window.jpg`: a screenshot of the actual installed Glimpse app displaying a public-domain sample image.
@@ -25,9 +25,9 @@ The website is separate from the app source repository. It does not modify the a
 
 ## Download behavior
 
-At creation, the app has no public GitHub releases. Source-build links work immediately, and the page states the current availability accurately. There are no placeholder download links.
+At creation, the app has no public GitHub releases. Project links work immediately, and the page states the current availability accurately. There are no placeholder download links.
 
-On page load, `releases.js` checks the app’s five most recent public releases. It selects a stable release with a `Glimpse-*.zip` or `.dmg` asset, excluding local tests, source packages, debug archives, and notarization uploads. Matching GitHub download links replace the source-build buttons. Release version and actual download size are shown. Offline, rate-limited, missing, draft, and prerelease results keep the source-build fallback.
+On page load, `releases.js` checks the app’s five most recent public releases. It selects a stable release with a `Glimpse-*.zip` or `.dmg` asset, excluding local tests, source packages, debug archives, and notarization uploads. Matching GitHub download links replace the project buttons. Release version and actual download size are shown. Offline, rate-limited, missing, draft, and prerelease results keep the project-link fallback.
 
 The website assumes that public release artifacts are reviewed and published by the app maintainer. Signing and notarization belong to the app’s distribution workflow, documented in its own repository. This website does not sign, inspect, or certify binaries.
 
@@ -40,6 +40,6 @@ In Namecheap, add one **CNAME Record** with Host **glimpse**, Value **charleslaw
 ## Asset credits
 
 - Glimpse icon: copied from the user’s existing app assets; unchanged.
-- App screenshot: captured directly from the installed Glimpse app. The screenshot has been resized and compressed for the website. The preview restores the native window dots in CSS to cover macOS’s temporary screen-capture indicator.
+- App screenshot: captured directly from the installed Glimpse app. The screenshot has been resized and compressed for the website. The native window controls are included in the image itself, so the preview and full-size view match.
 - Sample photo: [Antelope Canyon by Justin Roy](https://commons.wikimedia.org/wiki/File:Antelope_Canyon_(Unsplash).jpg), published under **CC0 1.0**. The photo appears inside the screenshot. A visible photo credit is included in the footer.
 - Product features and requirements: verified against the app’s local README, source code, and distribution documentation. No benchmark numbers, ratings, testimonials, or unreleased binary availability are invented.
